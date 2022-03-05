@@ -1,0 +1,62 @@
+Question 1)
+
+Entity 1: Books
+    Property: Book ID
+    Property: Genre
+    Property: Author ID
+    Property: Publisher ID
+    Property: Price
+    Property: Title
+    Property: Editor ID
+
+Entity 2: Publishers
+    Property: Publisher ID
+    Property: Publisher Name
+    Property: Royalty Percentage
+
+Entity 3: Authors
+    Property: Author ID
+    Property: FirstName
+    Property: LastName
+
+Entity 4: Editors
+    Property: Editor ID
+    Property: FirstName
+    Property: LastName
+
+Entity 5: Orders
+    Property: Book Order
+    Property: Order ID
+    Property: Customer ID
+    Property: Book ID
+
+Entity 6: Customers
+    Property: Customer ID
+    Property: FirstName
+    Property: LastName
+
+Question 2)
+
+Unique Identifiers/Primary Keys:
+
+PK 1 - BookID
+PK 2 - Publisher ID
+PK 3 - Author ID
+PK 4 - Editor ID
+PK 5 - Order ID
+PK 6 - Customer ID
+
+Question 3)
+
+Table Relationships:
+
+Books, Authors, N:N
+Royalties, Books, N:N
+Royalties, Authors, N:1
+Books, Genres, N:N
+Books, Publishers, N:1
+Editors, Book, N:N
+Books, Order, N:1
+Orders, Book, N:1
+Books, Customer, N:1
+Orders, Customer, N:1
